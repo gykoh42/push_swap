@@ -6,7 +6,7 @@
 /*   By: gykoh <gykoh@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 14:50:59 by gykoh             #+#    #+#             */
-/*   Updated: 2023/11/11 04:06:18 by gykoh            ###   ########.fr       */
+/*   Updated: 2023/11/11 05:09:45 by gykoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int ft_find_idx(t_stack *stack, int data)
     return (i);
 }
 
-int ft_find_idx_a(t_stack *stack_a, int data)
+int ft_find_location_a(t_stack *stack_a, int data)
 {
     int i;
     t_stack *tmp;
@@ -48,7 +48,7 @@ int ft_find_idx_a(t_stack *stack_a, int data)
     return (i);
 }
 
-int ft_find_idx_b(t_stack *stack_b, int data)
+int ft_find_location_b(t_stack *stack_b, int data)
 {
     int i;
     t_stack *tmp;
