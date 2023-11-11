@@ -6,7 +6,7 @@
 /*   By: gykoh <gykoh@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/10 05:37:48 by gykoh             #+#    #+#             */
-/*   Updated: 2023/11/11 13:50:49 by gykoh            ###   ########.fr       */
+/*   Updated: 2023/11/11 16:34:54 by gykoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,7 @@ void	ft_sort_b_until_three(t_stack **stack_a, t_stack **stack_b)
 		}
 	}
 }
+
 t_stack	**ft_sort_a(t_stack **stack_a, t_stack **stack_b)
 {
 	int		i;
@@ -61,6 +62,7 @@ t_stack	**ft_sort_a(t_stack **stack_a, t_stack **stack_b)
 	}
 	return (stack_a);
 }
+
 t_stack	*ft_sort_b(t_stack **stack_a)
 {
 	t_stack	*stack_b;
