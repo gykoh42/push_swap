@@ -6,7 +6,7 @@
 /*   By: gykoh <gykoh@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 12:06:09 by gykoh             #+#    #+#             */
-/*   Updated: 2023/11/11 16:17:25 by gykoh            ###   ########.fr       */
+/*   Updated: 2023/11/12 00:43:26 by gykoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,8 @@ long	ft_atoi(const char *str)
 		rtn = rtn * 10 + (str[i] - '0');
 		i++;
 	}
+	if (str[i] == '-' || str[i] == '+')
+		ft_error_exit();
 	return (rtn * sign);
 }
 
