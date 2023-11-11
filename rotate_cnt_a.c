@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   rotate_cnt_ba.c                                    :+:      :+:    :+:   */
+/*   rotate_cnt_a.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gykoh <gykoh@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 20:44:58 by gykoh             #+#    #+#             */
-/*   Updated: 2023/11/11 05:09:47 by gykoh            ###   ########.fr       */
+/*   Updated: 2023/11/11 13:57:03 by gykoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-int	ft_case_rarb_a(t_stack *a, t_stack *b, int c)
+int	ft_cnt_rarb_a(t_stack *a, t_stack *b, int c)
 {
 	int	i;
 
@@ -22,7 +22,7 @@ int	ft_case_rarb_a(t_stack *a, t_stack *b, int c)
 	return (i);
 }
 
-int	ft_case_rrarrb_a(t_stack *a, t_stack *b, int c)
+int	ft_cnt_rrarrb_a(t_stack *a, t_stack *b, int c)
 {
 	int	i;
 
@@ -34,7 +34,7 @@ int	ft_case_rrarrb_a(t_stack *a, t_stack *b, int c)
 	return (i);
 }
 
-int	ft_case_rarrb_a(t_stack *a, t_stack *b, int c)
+int	ft_cnt_rarrb_a(t_stack *a, t_stack *b, int c)
 {
 	int	i;
 
@@ -45,7 +45,7 @@ int	ft_case_rarrb_a(t_stack *a, t_stack *b, int c)
 	return (i);
 }
 
-int	ft_case_rrarb_a(t_stack *a, t_stack *b, int c)
+int	ft_cnt_rrarb_a(t_stack *a, t_stack *b, int c)
 {
 	int	i;
 

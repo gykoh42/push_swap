@@ -6,7 +6,7 @@
 /*   By: gykoh <gykoh@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/10 05:37:48 by gykoh             #+#    #+#             */
-/*   Updated: 2023/11/11 04:07:22 by gykoh            ###   ########.fr       */
+/*   Updated: 2023/11/11 13:50:49 by gykoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,13 +23,13 @@ void	ft_sort_b_until_three(t_stack **stack_a, t_stack **stack_b)
 		i = ft_rotate_type_atob(*stack_a, *stack_b);
 		while (i >= 0)
 		{
-			if (i == ft_case_rarb_b(*stack_a, *stack_b, tmp->data))
+			if (i == ft_cnt_rarb_b(*stack_a, *stack_b, tmp->data))
 				i = ft_do_rarb(stack_a, stack_b, tmp->data, 'a');
-			else if (i == ft_case_rrarrb_b(*stack_a, *stack_b, tmp->data))
+			else if (i == ft_cnt_rrarrb_b(*stack_a, *stack_b, tmp->data))
 				i = ft_do_rrarrb(stack_a, stack_b, tmp->data, 'a');
-			else if (i == ft_case_rarrb_b(*stack_a, *stack_b, tmp->data))
+			else if (i == ft_cnt_rarrb_b(*stack_a, *stack_b, tmp->data))
 				i = ft_do_rarrb(stack_a, stack_b, tmp->data, 'a');
-			else if (i == ft_case_rrarb_b(*stack_a, *stack_b, tmp->data))
+			else if (i == ft_cnt_rrarb_b(*stack_a, *stack_b, tmp->data))
 				i = ft_do_rrarb(stack_a, stack_b, tmp->data, 'a');
 			else
 				tmp = tmp->next;
@@ -47,13 +47,13 @@ t_stack	**ft_sort_a(t_stack **stack_a, t_stack **stack_b)
 		i = ft_rotate_type_btoa(*stack_a, *stack_b);
 		while (i >= 0)
 		{
-			if (i == ft_case_rarb_a(*stack_a, *stack_b, tmp->data))
+			if (i == ft_cnt_rarb_a(*stack_a, *stack_b, tmp->data))
 				i = ft_do_rarb(stack_a, stack_b, tmp->data, 'b');
-			else if (i == ft_case_rarrb_a(*stack_a, *stack_b, tmp->data))
+			else if (i == ft_cnt_rarrb_a(*stack_a, *stack_b, tmp->data))
 				i = ft_do_rarrb(stack_a, stack_b, tmp->data, 'b');
-			else if (i == ft_case_rrarrb_a(*stack_a, *stack_b, tmp->data))
+			else if (i == ft_cnt_rrarrb_a(*stack_a, *stack_b, tmp->data))
 				i = ft_do_rrarrb(stack_a, stack_b, tmp->data, 'b');
-			else if (i == ft_case_rrarb_a(*stack_a, *stack_b, tmp->data))
+			else if (i == ft_cnt_rrarb_a(*stack_a, *stack_b, tmp->data))
 				i = ft_do_rrarb(stack_a, stack_b, tmp->data, 'b');
 			else
 				tmp = tmp->next;

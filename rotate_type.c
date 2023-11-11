@@ -6,7 +6,7 @@
 /*   By: gykoh <gykoh@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/10 20:50:42 by gykoh             #+#    #+#             */
-/*   Updated: 2023/11/11 04:07:11 by gykoh            ###   ########.fr       */
+/*   Updated: 2023/11/11 13:50:49 by gykoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,17 +18,17 @@ int	ft_rotate_type_btoa(t_stack *a, t_stack *b)
 	t_stack	*tmp;
 
 	tmp = b;
-	i = ft_case_rrarrb_a(a, b, b->data);
+	i = ft_cnt_rrarrb_a(a, b, b->data);
 	while (tmp)
 	{
-		if (i > ft_case_rarb_a(a, b, tmp->data))
-			i = ft_case_rarb_a(a, b, tmp->data);
-		if (i > ft_case_rrarrb_a(a, b, tmp->data))
-			i = ft_case_rrarrb_a(a, b, tmp->data);
-		if (i > ft_case_rarrb_a(a, b, tmp->data))
-			i = ft_case_rarrb_a(a, b, tmp->data);
-		if (i > ft_case_rrarb_a(a, b, tmp->data))
-			i = ft_case_rrarb_a(a, b, tmp->data);
+		if (i > ft_cnt_rarb_a(a, b, tmp->data))
+			i = ft_cnt_rarb_a(a, b, tmp->data);
+		if (i > ft_cnt_rrarrb_a(a, b, tmp->data))
+			i = ft_cnt_rrarrb_a(a, b, tmp->data);
+		if (i > ft_cnt_rarrb_a(a, b, tmp->data))
+			i = ft_cnt_rarrb_a(a, b, tmp->data);
+		if (i > ft_cnt_rrarb_a(a, b, tmp->data))
+			i = ft_cnt_rrarb_a(a, b, tmp->data);
 		tmp = tmp->next;
 	}
 	return (i);
@@ -40,17 +40,17 @@ int	ft_rotate_type_atob(t_stack *a, t_stack *b)
 	t_stack	*tmp;
 
 	tmp = a;
-	i = ft_case_rrarrb_b(a, b, a->data);
+	i = ft_cnt_rrarrb_b(a, b, a->data);
 	while (tmp)
 	{
-		if (i > ft_case_rarb_b(a, b, tmp->data))
-			i = ft_case_rarb_b(a, b, tmp->data);
-		if (i > ft_case_rrarrb_b(a, b, tmp->data))
-			i = ft_case_rrarrb_b(a, b, tmp->data);
-		if (i > ft_case_rarrb_b(a, b, tmp->data))
-			i = ft_case_rarrb_b(a, b, tmp->data);
-		if (i > ft_case_rrarb_b(a, b, tmp->data))
-			i = ft_case_rrarb_b(a, b, tmp->data);
+		if (i > ft_cnt_rarb_b(a, b, tmp->data))
+			i = ft_cnt_rarb_b(a, b, tmp->data);
+		if (i > ft_cnt_rrarrb_b(a, b, tmp->data))
+			i = ft_cnt_rrarrb_b(a, b, tmp->data);
+		if (i > ft_cnt_rarrb_b(a, b, tmp->data))
+			i = ft_cnt_rarrb_b(a, b, tmp->data);
+		if (i > ft_cnt_rrarb_b(a, b, tmp->data))
+			i = ft_cnt_rrarb_b(a, b, tmp->data);
 		tmp = tmp->next;
 	}
 	return (i);

@@ -6,7 +6,7 @@
 /*   By: gykoh <gykoh@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 02:49:36 by gykoh             #+#    #+#             */
-/*   Updated: 2023/11/11 05:09:45 by gykoh            ###   ########.fr       */
+/*   Updated: 2023/11/11 13:50:49 by gykoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,14 +64,14 @@ void	ft_sort_three(t_stack **stack_a);
 int 	ft_find_idx(t_stack *stack, int data);
 int		ft_find_location_a(t_stack *stack_a, int data);
 int		ft_find_location_b(t_stack *stack_b, int data);
-int		ft_case_rarb_a(t_stack *a, t_stack *b, int c);
-int		ft_case_rrarrb_a(t_stack *a, t_stack *b, int c);
-int		ft_case_rarrb_a(t_stack *a, t_stack *b, int c);
-int		ft_case_rrarb_a(t_stack *a, t_stack *b, int c);
-int		ft_case_rarb_b(t_stack *a, t_stack *b, int c);
-int		ft_case_rrarrb_b(t_stack *a, t_stack *b, int c);
-int		ft_case_rrarb_b(t_stack *a, t_stack *b, int c);
-int		ft_case_rarrb_b(t_stack *a, t_stack *b, int c);
+int		ft_cnt_rarb_a(t_stack *a, t_stack *b, int c);
+int		ft_cnt_rrarrb_a(t_stack *a, t_stack *b, int c);
+int		ft_cnt_rarrb_a(t_stack *a, t_stack *b, int c);
+int		ft_cnt_rrarb_a(t_stack *a, t_stack *b, int c);
+int		ft_cnt_rarb_b(t_stack *a, t_stack *b, int c);
+int		ft_cnt_rrarrb_b(t_stack *a, t_stack *b, int c);
+int		ft_cnt_rrarb_b(t_stack *a, t_stack *b, int c);
+int		ft_cnt_rarrb_b(t_stack *a, t_stack *b, int c);
 int		ft_rotate_type_atob(t_stack *a, t_stack *b);
 int		ft_rotate_type_btoa(t_stack *a, t_stack *b);
 int		ft_do_rarb(t_stack **a, t_stack **b, int c, char s);
