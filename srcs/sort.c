@@ -6,7 +6,7 @@
 /*   By: gykoh <gykoh@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/10 05:37:48 by gykoh             #+#    #+#             */
-/*   Updated: 2023/11/11 16:34:54 by gykoh            ###   ########.fr       */
+/*   Updated: 2023/11/11 17:27:57 by gykoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -101,7 +101,7 @@ void	ft_sort(t_stack **stack_a)
 		{
 			while ((*stack_a)->data != ft_min_data(*stack_a))
 				ft_rra(stack_a);
-		}			
+		}
 	}
 	ft_free_stack(&stack_b);
 }
