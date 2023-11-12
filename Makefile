@@ -6,7 +6,7 @@
 #    By: gykoh <gykoh@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/11 13:59:07 by gykoh             #+#    #+#              #
-#    Updated: 2023/11/11 15:51:30 by gykoh            ###   ########.fr        #
+#    Updated: 2023/11/12 20:45:04 by gykoh            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,7 +28,8 @@ SRC = 	srcs/push_swap.c \
 		srcs/rotate_cnt_a.c \
 		srcs/rotate_cnt_b.c \
 		srcs/rotate_type.c \
-		srcs/rotate.c \
+		srcs/rotate_a.c \
+		srcs/rotate_b.c \
 		srcs/sort_utils.c \
 		srcs/sort.c \
 		srcs/stack_utils.c \

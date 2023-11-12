@@ -6,7 +6,7 @@
 /*   By: gykoh <gykoh@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 02:49:36 by gykoh             #+#    #+#             */
-/*   Updated: 2023/11/11 17:26:20 by gykoh            ###   ########.fr       */
+/*   Updated: 2023/11/12 20:44:47 by gykoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,10 +74,14 @@ int		ft_cnt_rrarb_b(t_stack *a, t_stack *b, int data);
 int		ft_cnt_rarrb_b(t_stack *a, t_stack *b, int data);
 int		ft_rotate_type_atob(t_stack *a, t_stack *b);
 int		ft_rotate_type_btoa(t_stack *a, t_stack *b);
-int		ft_do_rarb(t_stack **a, t_stack **b, int c, char s);
-int		ft_do_rrarrb(t_stack **a, t_stack **b, int c, char s);
-int		ft_do_rrarb(t_stack **a, t_stack **b, int c, char s);
-int		ft_do_rarrb(t_stack **a, t_stack **b, int c, char s);
+int		ft_do_rarb_a(t_stack **a, t_stack **b, int c);
+int		ft_do_rrarrb_a(t_stack **a, t_stack **b, int c);
+int		ft_do_rrarb_a(t_stack **a, t_stack **b, int c);
+int		ft_do_rarrb_a(t_stack **a, t_stack **b, int c);
+int		ft_do_rarb_b(t_stack **a, t_stack **b, int c);
+int		ft_do_rrarrb_b(t_stack **a, t_stack **b, int c);
+int		ft_do_rrarb_b(t_stack **a, t_stack **b, int c);
+int		ft_do_rarrb_b(t_stack **a, t_stack **b, int c);
 void	ft_sort(t_stack **stack_a);
 t_stack	**ft_sort_a(t_stack **stack_a, t_stack **stack_b);
 t_stack	*ft_sort_b(t_stack **stack_a);

@@ -6,7 +6,7 @@
 /*   By: gykoh <gykoh@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/10 05:37:48 by gykoh             #+#    #+#             */
-/*   Updated: 2023/11/12 02:49:45 by gykoh            ###   ########.fr       */
+/*   Updated: 2023/11/12 18:10:12 by gykoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,19 +24,18 @@ void	ft_sort_b_until_three(t_stack **stack_a, t_stack **stack_b)
 		while (i >= 0)
 		{
 			if (i == ft_cnt_rarb_b(*stack_a, *stack_b, tmp->data))
-				i = ft_do_rarb(stack_a, stack_b, tmp->data, 'a');
+				i = ft_do_rarb_a(stack_a, stack_b, tmp->data);
 			else if (i == ft_cnt_rrarrb_b(*stack_a, *stack_b, tmp->data))
-				i = ft_do_rrarrb(stack_a, stack_b, tmp->data, 'a');
+				i = ft_do_rrarrb_a(stack_a, stack_b, tmp->data);
 			else if (i == ft_cnt_rarrb_b(*stack_a, *stack_b, tmp->data))
-				i = ft_do_rarrb(stack_a, stack_b, tmp->data, 'a');
+				i = ft_do_rarrb_a(stack_a, stack_b, tmp->data);
 			else if (i == ft_cnt_rrarb_b(*stack_a, *stack_b, tmp->data))
-				i = ft_do_rrarb(stack_a, stack_b, tmp->data, 'a');
+				i = ft_do_rrarb_a(stack_a, stack_b, tmp->data);
 			else
 				tmp = tmp->next;
 		}
 	}
 }
-
 t_stack	**ft_sort_a(t_stack **stack_a, t_stack **stack_b)
 {
 	int		i;
@@ -49,13 +48,13 @@ t_stack	**ft_sort_a(t_stack **stack_a, t_stack **stack_b)
 		while (i >= 0)
 		{
 			if (i == ft_cnt_rarb_a(*stack_a, *stack_b, tmp->data))
-				i = ft_do_rarb(stack_a, stack_b, tmp->data, 'b');
+				i = ft_do_rarb_b(stack_a, stack_b, tmp->data);
 			else if (i == ft_cnt_rarrb_a(*stack_a, *stack_b, tmp->data))
-				i = ft_do_rarrb(stack_a, stack_b, tmp->data, 'b');
+				i = ft_do_rarrb_b(stack_a, stack_b, tmp->data);
 			else if (i == ft_cnt_rrarrb_a(*stack_a, *stack_b, tmp->data))
-				i = ft_do_rrarrb(stack_a, stack_b, tmp->data, 'b');
+				i = ft_do_rrarrb_b(stack_a, stack_b, tmp->data);
 			else if (i == ft_cnt_rrarb_a(*stack_a, *stack_b, tmp->data))
-				i = ft_do_rrarb(stack_a, stack_b, tmp->data, 'b');
+				i = ft_do_rrarb_b(stack_a, stack_b, tmp->data);
 			else
 				tmp = tmp->next;
 		}
