@@ -6,7 +6,7 @@
 /*   By: gykoh <gykoh@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/10 05:37:48 by gykoh             #+#    #+#             */
-/*   Updated: 2023/11/12 21:51:03 by gykoh            ###   ########.fr       */
+/*   Updated: 2023/11/13 00:10:00 by gykoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,18 +67,16 @@ t_stack	*ft_sort_b(t_stack **stack_a)
 {
 	t_stack	*stack_b;
 	int		stack_a_size;
-	int		is_sorted_a;
 
 	stack_b = NULL;
 	stack_a_size = ft_stack_size(*stack_a);
-	is_sorted_a = ft_is_sorted(*stack_a);
-	if (stack_a_size > 3 && !is_sorted_a)
+	if (stack_a_size > 3 && !ft_is_sorted(*stack_a))
 		ft_pb(stack_a, &stack_b);
-	if (stack_a_size > 3 && !is_sorted_a)
+	if (stack_a_size > 3 && !ft_is_sorted(*stack_a))
 		ft_pb(stack_a, &stack_b);
-	if (stack_a_size > 3 && !is_sorted_a)
+	if (stack_a_size > 3 && !ft_is_sorted(*stack_a))
 		ft_sort_b_until_three(stack_a, &stack_b);
-	if (!is_sorted_a)
+	if (!ft_is_sorted(*stack_a))
 		ft_sort_three(stack_a);
 	return (stack_b);
 }
