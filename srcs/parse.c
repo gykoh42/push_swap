@@ -6,7 +6,7 @@
 /*   By: gykoh <gykoh@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 01:36:01 by gykoh             #+#    #+#             */
-/*   Updated: 2023/11/11 16:51:58 by gykoh            ###   ########.fr       */
+/*   Updated: 2023/11/13 00:26:27 by gykoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ void	ft_check_split(char *str, t_stack **stack)
 			ft_free_stack(stack);
 			ft_error_exit();
 		}
-		ft_push_back(stack, ft_new_stack(data));
+		ft_push_back(stack, ft_new_node(data));
 	}
 	ft_free_str(split_str);
 }

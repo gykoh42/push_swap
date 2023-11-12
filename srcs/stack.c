@@ -6,22 +6,22 @@
 /*   By: gykoh <gykoh@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 03:23:57 by gykoh             #+#    #+#             */
-/*   Updated: 2023/11/11 16:36:06 by gykoh            ###   ########.fr       */
+/*   Updated: 2023/11/13 00:30:46 by gykoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-t_stack	*ft_new_stack(int data)
+t_stack	*ft_new_node(int data)
 {
-	t_stack	*stack;
+	t_stack	*node;
 
-	stack = (t_stack *)malloc(sizeof(t_stack));
-	if (!stack)
+	node = (t_stack *)malloc(sizeof(t_stack));
+	if (!node)
 		ft_error_exit();
-	stack->data = data;
-	stack->next = NULL;
-	return (stack);
+	node->data = data;
+	node->next = NULL;
+	return (node);
 }
 
 t_stack	*ft_last_node(t_stack *stack)
@@ -40,5 +40,5 @@ void	ft_push_back(t_stack **stack, t_stack *new_node)
 	if (*stack == NULL)
 		*stack = new_node;
 	else
-		(ft_last_node(*stack))->next = new_node;
+		ft_last_node(*stack)->next = new_node;
 }

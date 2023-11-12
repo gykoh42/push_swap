@@ -6,7 +6,7 @@
 /*   By: gykoh <gykoh@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 02:49:36 by gykoh             #+#    #+#             */
-/*   Updated: 2023/11/12 20:44:47 by gykoh            ###   ########.fr       */
+/*   Updated: 2023/11/13 00:18:33 by gykoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ typedef struct s_stack
 	struct s_stack	*next;
 }	t_stack;
 
-t_stack	*ft_new_stack(int data);
+t_stack	*ft_new_node(int data);
 t_stack	*ft_last_node(t_stack *stack);
 void	ft_push_back(t_stack **stack, t_stack *new_node);
 int		ft_stack_size(t_stack *stack);
