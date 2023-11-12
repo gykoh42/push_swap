@@ -6,7 +6,7 @@
 /*   By: gykoh <gykoh@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 14:50:59 by gykoh             #+#    #+#             */
-/*   Updated: 2023/11/12 20:11:03 by gykoh            ###   ########.fr       */
+/*   Updated: 2023/11/12 21:50:48 by gykoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int	ft_find_location_a(t_stack *stack_a, int data)
 {
 	int		i;
 	t_stack	*tmp;
-	int 	min_data;
+	int		min_data;
 
 	i = 1;
 	min_data = ft_min_data(stack_a);

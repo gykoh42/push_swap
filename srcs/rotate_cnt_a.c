@@ -6,7 +6,7 @@
 /*   By: gykoh <gykoh@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 20:44:58 by gykoh             #+#    #+#             */
-/*   Updated: 2023/11/12 02:04:55 by gykoh            ###   ########.fr       */
+/*   Updated: 2023/11/12 21:53:05 by gykoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,10 +27,10 @@ int	ft_cnt_rarb_a(t_stack *a, t_stack *b, int data)
 int	ft_cnt_rrarrb_a(t_stack *a, t_stack *b, int data)
 {
 	int	i;
-	int location_a;
-	int b_idx;
-	int a_stack_size;
-	int b_stack_size;
+	int	location_a;
+	int	b_idx;
+	int	a_stack_size;
+	int	b_stack_size;
 
 	i = 0;
 	location_a = ft_find_location_a(a, data);
@@ -47,9 +47,9 @@ int	ft_cnt_rrarrb_a(t_stack *a, t_stack *b, int data)
 int	ft_cnt_rarrb_a(t_stack *a, t_stack *b, int data)
 {
 	int	i;
-	int location_a;
-	int b_idx;
-	int b_stack_size;
+	int	location_a;
+	int	b_idx;
+	int	b_stack_size;
 
 	i = 0;
 	location_a = ft_find_location_a(a, data);
@@ -64,9 +64,9 @@ int	ft_cnt_rarrb_a(t_stack *a, t_stack *b, int data)
 int	ft_cnt_rrarb_a(t_stack *a, t_stack *b, int data)
 {
 	int	i;
-	int location_a;
-	int a_stack_size;
-	int b_idx;
+	int	location_a;
+	int	a_stack_size;
+	int	b_idx;
 
 	i = 0;
 	location_a = ft_find_location_a(a, data);
