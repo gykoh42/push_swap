@@ -6,7 +6,7 @@
 /*   By: gykoh <gykoh@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/08 16:40:27 by gykoh             #+#    #+#             */
-/*   Updated: 2023/11/11 16:22:57 by gykoh            ###   ########.fr       */
+/*   Updated: 2023/11/13 20:32:26 by gykoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,6 @@ void	ft_rr_base(t_stack **stack)
 	if (!*stack || !(*stack)->next)
 		return ;
 	last = ft_last_node(*stack);
-	if (last == *stack)
-		return ;
 	last_prev = *stack;
 	while (last_prev->next != last)
 		last_prev = last_prev->next;
